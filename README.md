@@ -17,12 +17,11 @@ This project is part of the Udacity Azure ML Nanodegree. The dataset contains da
 <a name="architecture"/>
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step.
-
+The steps to take are visualized in the figure below.
+<br>
 <br>
 ![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Architecture.png)
 <br>
-
 
 <a name="key_steps"/>
 
