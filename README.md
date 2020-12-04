@@ -5,6 +5,7 @@
 [Architectural Diagram](#architecture) <br>
 [Key Steps](#key_steps) <br> 
 [Screen Recording](#recording) <br>
+[Future improvements](#future) <br>
 <br>   
 
 <a name="overview"/>
@@ -71,13 +72,52 @@ Swagger documentation helps in explaining what the deployed model needs as input
 <br>
 
 ### Consuming model endpoints
-When the model is deployed.............................
+When the model is deployed, the scoring_uri and the key can be copied from Azure and pasted in the endpoint.py file. The endpoint.py file contains a JSON payload (2 cases where all the independent variables are provided and which can be used to derive inference on). The endpoint.py file can be executed in the terminal. The first screenshot below shows the endpoint.py script that is running against the API and producing JSON output (data.json file in the directory). In order to load-test the model, the Apache Benchmark commandline tool is installed. The benchmark.sh file is run and the the result of that is provided in the second screenshot below.  
+<br>
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/EndpointPY_results.png)
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/ApacheBenchmark.png)
+<br>
 
-
+### Create, Publish and Consume a Pipeline
+Apart from mainly clicking around in Azure Machine Learning Studio, we can programmatically achieve the same by means of using the Python SDK. A Jupyter notebook is provided which is adjusted here and there. This notebook is available in the directory with the name "aml-pipelines-with-automated-machine-learning-step-total2.ipynb". Please have a look to see the documentation and the resulting output. The steps in this notebook are: creating an experiment in an existing workspace, creating or attaching an existing AmlCompute to a workspace, defining data loading in a TabularDataset, configuring AutoML using AutoMLConfig, using AutoMLStep, training the model using AmlCompute, exploring the results and testing the best fitted model. The screenshots below show that the pipeline has been created, there is a pipeline endpoint, the Bankmarketing dataset with the AutoML module is there (third one added to the two already there), the REST endpoint and a status of active, the Jupyter Notebook widget output and the ML studio showing the scheduled run.  
+<br>
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Extra_pipeline_running.png)
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Pipeline_created.png)
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Bankmarketing_Dataset_AutoML_module.png)
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Pipeline_endpoint.png)
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Pipeline_endpoint2.png)
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Extra_Pipeline_MLOps_project.png)
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Extra_Pipeline_completed.png)
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/AutoML_experiment_completed_2.png)
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Widget_1.png)
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Best_model.png)
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Performance_model.png)
+<br>
 
 <a name="recording"/>
 
 ## Screen Recording
-Please go to https://vimeo.com/487342635 to see a screencast of the provided work on Azure. 
+Further documentation is in the form of a short screencast. Please go to https://vimeo.com/487342635 to see a screencast of the provided work on Azure. 
+<br>
 
-<a name="standout"/>
+<a name="future"/>
+
+## Future Improvements
+This project can be improved in a number of ways. First, a pipeline has been created to run an AutoML experiment. Several other pipelines can be constructed, e.g. that trigger retraining when new data is there or pipelines that perform data cleaning and feature engineering operations. Also, a batch inference pipeline can be constructed in order to derive inference on large samples. In addition, other metrics can be used to optimize the machine learning models. The response variable is imbalanced (see screenshot below). Sampling could be an option or using e.g. the precision-recall AUC as evaluation metric. Also running the AutoML experiment for longer and with different parameters might result in a better model.  
+<br>
+<br>
+![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Standout_class_imbalance.png)
+<br>
