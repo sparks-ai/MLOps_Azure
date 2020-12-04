@@ -1,20 +1,42 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
+# Operationalizing Machine Learning
 
+## Table of Contents  
+[Overview](#overview)  
+[Architectural Diagram](#architecture) <br>
+[Key Steps](#key_steps) <br> 
+[Screen Recording](#recording) <br>
+[Stoundout Suggenstions](#standout) <br> 
+<br>   
 
-# Your Project Title Here
+<a name="overview"/>
 
-*TODO:* Write an overview to your project.
+## Overview
+This project is part of the Udacity Azure ML Nanodegree. The dataset contains data about financial and personal details of customers of a bank. Based on this data, Azure will be used to configure a cloud-based machine learning production model, deploy it, and finally consume it. Besides, a pipeline will be created, published and consumed.  
+<br>
+
+<a name="architecture"/>
 
 ## Architectural Diagram
 *TODO*: Provide an architectual diagram of the project and give an introduction of each step.
+
+<br>
+![alt text](https://github.com/sparks-ai/ML-Azure/blob/master/Architecture_diagram_Udacity.jpg?raw=true)
+<br>
+
+
+<a name="key_steps"/>
 
 ## Key Steps
 *TODO*: Write a short discription of the key steps. Remeber to include all the screencasts required to demonstrate key steps. 
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
+<a name="recording"/>
+
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+Please go to https://vimeo.com/487342635 to see a screencast of the provided work on Azure. 
+
+<a name="standout"/>
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
