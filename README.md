@@ -5,7 +5,6 @@
 [Architectural Diagram](#architecture) <br>
 [Key Steps](#key_steps) <br> 
 [Screen Recording](#recording) <br>
-[Stoundout Suggenstions](#standout) <br> 
 <br>   
 
 <a name="overview"/>
@@ -21,6 +20,12 @@ The steps to take are visualized in the figure below.
 <br>
 <br>
 ![alt text](https://github.com/sparks-ai/MLOps_Azure/blob/master/Images/Architecture.png)
+<br>
+
+<a name="key_steps"/>
+
+## Key Steps
+The Key steps follow the architectural diagram and provide more details via screenshots. 
 <br>
 
 ### Authentication
@@ -68,12 +73,7 @@ Swagger documentation helps in explaining what the deployed model needs as input
 ### Consuming model endpoints
 When the model is deployed.............................
 
-<a name="key_steps"/>
 
-## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screencasts required to demonstrate key steps. 
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 <a name="recording"/>
 
@@ -81,6 +81,3 @@ When the model is deployed.............................
 Please go to https://vimeo.com/487342635 to see a screencast of the provided work on Azure. 
 
 <a name="standout"/>
-
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
